@@ -4,7 +4,7 @@ from wordle import wordle5, choose_random
 
 
 
-TOKEN = '7079075089:AAEYE1IQ8jnx3uSyKz6XovcEbQHHiFjktW4'
+TOKEN = 'YOUR TOKEN HERE'
 bot = telebot.TeleBot(TOKEN, parse_mode='HTML')
 
 # Initialize dictionaries
@@ -108,8 +108,6 @@ def group_states(message):
                 case '6':
                     scores_message += f"Количество слов отгаданных за <b>шесть</b> попыток: {score}\n"
 
-        if username == "cvkacry":
-            scores_message += "Шахиста тебе нет равных! Королева! Лучшая!!!"    
 
 
         bot.reply_to(message, scores_message)
